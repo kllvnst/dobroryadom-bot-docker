@@ -26,15 +26,9 @@
 
 1) Клонируйте репозиторий и подготовьте окружение:
 ```bash
-git clone https://github.com/<YOUR_GH_USERNAME>/dobroryadom-bot-docker.git
+git clone https://github.com/kllvnst/dobroryadom-bot-docker.git
 cd dobroryadom-bot-docker/deploy
 cp .env.example .env
-```
-command prompt:
-```cmd
-git clone https://github.com/kllvnst/dobroryadom-bot-docker.git
-cd dobroryadom-bot-docker\deploy
-copy .env.example .env
 ```
 
 2) Откройте dobroryadom-bot-docker/deploy/.env и вставьте BOT_MAX_TOKEN.

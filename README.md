@@ -11,7 +11,7 @@
 - `deploy/` — инфраструктура локального запуска MAX-бота:
   - `docker-compose.yml` — единая точка запуска,
   - `.env.example` — пример переменных окружения.
-- `frontend` - код мини-приложения (Next.js).
+- `frontend_` - код мини-приложения (Next.js).
 - `Dockerfile` — для сборки только bot.
 - `requirements.txt` — общий список Python-зависимостей.
 - `.gitignore`, `.dockerignore`.
@@ -26,7 +26,7 @@
 
 1) Клонируйте репозиторий и подготовьте окружение:
 ```bash
-git clone https://github.com/kllvnst/dobroryadom-bot-docker.git
+git clone --recurse-submodules https://github.com/kllvnst/dobroryadom-bot-docker.git
 cd dobroryadom-bot-docker/deploy
 cp .env.example .env
 ```

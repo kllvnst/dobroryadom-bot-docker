@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.vscode/
+.venv/
+.env
+deploy/pgdata/
+deploy/data/
+backend/data/

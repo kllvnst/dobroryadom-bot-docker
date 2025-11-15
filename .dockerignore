@@ -1,0 +1,12 @@
+.git
+.gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.vscode/
+.venv/
+deploy/pgdata/*
+deploy/data/*
+frontend/

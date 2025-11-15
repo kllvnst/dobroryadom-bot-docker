@@ -1,0 +1,29 @@
+openapi: 3.0.0
+info:
+  title: maxbot-gw
+  version: 1.0.0
+paths:
+  /api/{url+}:
+    x-yc-apigateway-any-method:
+      summary: Proxy any method to backend
+      operationId: backendAny
+      # описание жадного параметра пути {url+}
+      parameters:
+        - in: path
+          name: url
+          required: false
+          explode: false
+          style: simple
+      x-yc-apigateway-integration:
+        type: serverless_containers
+        container_id: bbaasuckv17c6pe0p3ru
+        service_account_id: aje7ijc0e2i7jio8ph32
+
+  /bot/webhook:
+    post:
+      summary: Bot webhook
+      operationId: botWebhook
+      x-yc-apigateway-integration:
+        type: serverless_containers
+        container_id: bbatgjpgmtuq5pgkdfce
+        service_account_id: aje7ijc0e2i7jio8ph32

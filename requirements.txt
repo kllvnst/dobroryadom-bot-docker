@@ -1,0 +1,13 @@
+aiosqlite
+alembic==1.13.2
+asyncpg==0.29.0
+fastapi==0.121.1
+httpx==0.28.1
+maxapi==0.9.7
+pydantic_settings==2.12.0
+pydantic==2.12.4
+python-dotenv
+redis
+httpx==0.28.1
+SQLAlchemy==2.0.36
+uvicorn[standard]

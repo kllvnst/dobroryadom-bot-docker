@@ -9,7 +9,4 @@ __pycache__/
 deploy/pgdata/
 deploy/data/
 backend/data/
-frontend/node_modules/
-frontend/.next/
-frontend/.vercel/
-frontend/out/
+frontend/

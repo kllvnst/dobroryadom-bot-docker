@@ -1,3 +1,7 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/kllvnst/nextjs-max.git
+[submodule "frontend_"]
+	path = frontend_
+	url = https://github.com/kllvnst/nextjs-max.git
+	branch = main

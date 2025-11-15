@@ -1,6 +1,8 @@
 # ДоброРядом · Backend & Bot (Docker) + Frontend
+# ДоброРядом · Backend & Bot (Docker) + Frontend
 
 Этот репозиторий содержит **бэкенд (FastAPI)** и **чат-бота (MAX)** для мини-приложения «ДоброРядом».  
+Фронтенд развёрнут отдельно (Vercel), но в этом репозитории показан для демонстрации кода. 
 Фронтенд развёрнут отдельно (Vercel), но в этом репозитории показан для демонстрации кода. 
 Бэкенд написан и развёрнут через Docker и YC Serverless для доступа по внешним ссылкам и запросам. Контейнер  YC Serverless включает в себя доступ к базе данных PostgreSQL (не локальный).
 
@@ -20,19 +22,28 @@
 
 - Docker, Docker Desktop и Docker Compose.
 - Git.
+- Docker, Docker Desktop и Docker Compose.
+- Git.
 - Токен бота MAX (`BOT_MAX_TOKEN`).
 
 ## Быстрый старт
 
 1) Клонируйте репозиторий и подготовьте окружение:
 ```bash
-git clone --recurse-submodules https://github.com/kllvnst/dobroryadom-bot-docker.git
+git clone https://github.com/<YOUR_GH_USERNAME>/dobroryadom-bot-docker.git
 cd dobroryadom-bot-docker/deploy
 cp .env.example .env
+```
+command prompt:
+```cmd
+git clone https://github.com/kllvnst/dobroryadom-bot-docker.git
+cd dobroryadom-bot-docker\deploy
+copy .env.example .env
 ```
 
 2) Откройте dobroryadom-bot-docker/deploy/.env и вставьте BOT_MAX_TOKEN.
 
+3) Соберите и запустите бота из директории dobroryadom-bot-docker/deploy в терминале:
 3) Соберите и запустите бота из директории dobroryadom-bot-docker/deploy в терминале:
 ``` bash
 docker compose build --no-cache bot
